@@ -20,6 +20,9 @@
                 <li><%= link_to 'My profile', user_path(current_user) %></li>
                 <li role="separator" class="divider"></li>
                 <li><%= link_to 'Logout', logout_path, method: :delete %></li>
+                <li><%= link_to 'tasks一覧' , tasks_path %></li>
+                <li><%= link_to '作成ページ', new_task_path %></li>
+                
               </ul>
             </li>
            <% else %>
